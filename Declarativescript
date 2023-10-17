@@ -11,6 +11,11 @@ pipeline {
                        echo 'I am Compiling the code'
                      } 
                                             }
+         stage('Testing') {
+            steps {
+                       echo 'I am Testing the code'
+                     } 
+                                            }
         stage('Install') {
           steps {
                      echo 'I am Installing the code'
